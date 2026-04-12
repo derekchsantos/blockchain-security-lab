@@ -31,10 +31,15 @@ Além da segurança, o laboratório foca em infraestrutura e otimização:
    - Verificação de assinaturas digitais (r, s, v) off-chain.
    - Uso de **Assembly (Yul)** para manipulação eficiente de memória e extração de componentes de assinatura.
    - Validação via Fuzzing respeitando os limites matemáticos da curva **Secp256k1**.
+<img width="819" height="153" alt="image" src="https://github.com/user-attachments/assets/13bcb51f-a45b-45d3-abbc-e4f93841182d" />
 
 2. **Merkle Trees (`MerkleVerifier.sol`):**
    - Implementação de verificação de provas Merkle para Whitelists e Airdrops.
    - Foco em **gas optimization**, permitindo validar listas massivas de usuários com custo computacional mínimo na rede.
+   
+
+   <img width="826" height="154" alt="image" src="https://github.com/user-attachments/assets/f9b16469-ce39-4142-9349-14a07c47caf0" />
+
 
 ## 🛡️ Pipeline de Segurança (CI/CD)
 O projeto utiliza **GitHub Actions** para rodar o **Slither** automaticamente a cada push, impedindo que códigos com vulnerabilidades conhecidas sejam integrados ao branch principal.
