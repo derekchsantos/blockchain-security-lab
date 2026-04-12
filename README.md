@@ -7,7 +7,8 @@
 ## 🧪 Demonstração de Testes de Estresse (Foundry Invariants)
 O motor de testes do Foundry foi configurado para tentar "quebrar" o contrato através de milhares de combinações de depósitos e saques aleatórios.
 
-![Resultado do Teste de Invariante](teste-invariante.png)
+![Resultado do Teste de Invariante]<img width="849" height="301" alt="image" src="https://github.com/user-attachments/assets/4e79ced5-2907-4d7a-89bc-68ab3d0d7c70" />
+
 
 **Métricas do Teste:**
 - **Chamadas Totais:** 128.000 interações automáticas.
