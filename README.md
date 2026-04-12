@@ -1,66 +1,27 @@
-## Foundry
+# Blockchain Security Lab 🛡️
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+Este repositório contém estudos avançados de segurança em Smart Contracts (Solidity), utilizando ferramentas de elite do ecossistema Web3.
 
-Foundry consists of:
+## 🚀 Tecnologias e Ferramentas
+- **Foundry:** Framework de testes de alta performance (Property-based Testing & Fuzzing).
+- **Slither:** Analisador estático para detecção de vulnerabilidades críticas.
+- **GitHub Actions:** Pipeline de CI/CD para auditoria automática de segurança a cada commit.
+- **WSL2/Ubuntu:** Ambiente de desenvolvimento Linux otimizado.
 
-- **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
-- **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
-- **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
-- **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+## 🛠️ O que foi implementado
+1. **VulnerableVault.sol:** Um contrato de cofre que continha uma vulnerabilidade de **Reentrancy**.
+2. **Correção de Segurança:** Implementação do padrão *Checks-Effects-Interactions*.
+3. **Fuzz Testing:** Testes unitários com valores aleatórios (256 runs) para garantir a integridade do contrato.
+4. **Invariant Testing:** (Em progresso) Testes de estado para garantir que a contabilidade do contrato nunca falhe.
 
-## Documentation
+## 🛡️ Segurança (CI/CD)
+O projeto conta com um workflow do GitHub Actions que roda o **Slither** automaticamente. Isso garante que nenhum código com vulnerabilidades conhecidas seja aceito no repositório.
 
-https://book.getfoundry.sh/
+## 📋 Como rodar os testes
+```bash
+# Rodar testes unitários e fuzzing
+forge test
 
-## Usage
+# Rodar análise de segurança
+slither . --compile-force-framework foundry
 
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
