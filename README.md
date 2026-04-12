@@ -1,27 +1,19 @@
-# Blockchain Security Lab 🛡️
-
-Este repositório contém estudos avançados de segurança em Smart Contracts (Solidity), utilizando ferramentas de elite do ecossistema Web3.
-
-## 🚀 Tecnologias e Ferramentas
-- **Foundry:** Framework de testes de alta performance (Property-based Testing & Fuzzing).
-- **Slither:** Analisador estático para detecção de vulnerabilidades críticas.
-- **GitHub Actions:** Pipeline de CI/CD para auditoria automática de segurança a cada commit.
-- **WSL2/Ubuntu:** Ambiente de desenvolvimento Linux otimizado.
-
 ## 🛠️ O que foi implementado
 1. **VulnerableVault.sol:** Um contrato de cofre que continha uma vulnerabilidade de **Reentrancy**.
 2. **Correção de Segurança:** Implementação do padrão *Checks-Effects-Interactions*.
-3. **Fuzz Testing:** Testes unitários com valores aleatórios (256 runs) para garantir a integridade do contrato.
-4. **Invariant Testing:** (Em progresso) Testes de estado para garantir que a contabilidade do contrato nunca falhe.
+3. **Fuzz Testing:** Testes unitários com valores aleatórios (256 runs) para garantir a integridade das funções isoladas.
+4. **Stateful Invariant Testing:** Testes de estado avançados para garantir que a contabilidade do contrato nunca falhe, independente da sequência de transações.
+
+## 🧪 Demonstração de Testes de Estresse (Foundry Invariants)
+O motor de testes do Foundry foi configurado para tentar "quebrar" o contrato através de milhares de combinações de depósitos e saques aleatórios.
+
+![Resultado do Teste de Invariante](teste-invariante.png)
+
+**Métricas do Teste:**
+- **Chamadas Totais:** 128.000 interações automáticas.
+- **Cenários (Runs):** 256 sequências distintas.
+- **Resultado:** 100% de sucesso. A invariante de saldo foi mantida em todos os estados.
 
 ## 🛡️ Segurança (CI/CD)
-O projeto conta com um workflow do GitHub Actions que roda o **Slither** automaticamente. Isso garante que nenhum código com vulnerabilidades conhecidas seja aceito no repositório.
-
-## 📋 Como rodar os testes
-```bash
-# Rodar testes unitários e fuzzing
-forge test
-
-# Rodar análise de segurança
-slither . --compile-force-framework foundry
+O projeto conta com um workflow do GitHub Actions que roda o **Slither** automaticamente a cada push. Isso garante um nível de auditoria contínua no ciclo de desenvolvimento.
 
