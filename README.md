@@ -17,7 +17,7 @@ Este repositório contém estudos avançados de segurança e engenharia em Smart
 ### 🧪 Demonstração de Testes de Estresse (Foundry Invariants)
 O motor de testes do Foundry foi configurado para tentar "quebrar" o contrato através de milhares de combinações aleatórias.
 
-<img width="849" height="301" alt="image" src="https://github.com/user-attachments/assets/4e79ced5-2907-4d7a-89bc-68ab3d0d7c70" />
+<img width="796" height="303" alt="image" src="https://github.com/user-attachments/assets/44c77f2a-a809-49bc-923b-b2b98e87b761" />
 
 **Métricas alcançadas:**
 - **Chamadas Totais:** 128.000 interações automáticas.
