@@ -31,8 +31,9 @@ Além da segurança, o laboratório foca em infraestrutura e otimização:
    - Verificação de assinaturas digitais (r, s, v) off-chain.
    - Uso de **Assembly (Yul)** para manipulação eficiente de memória e extração de componentes de assinatura.
    - Validação via Fuzzing respeitando os limites matemáticos da curva **Secp256k1**.
-<img width="819" height="153" alt="image" src="https://github.com/user-attachments/assets/13bcb51f-a45b-45d3-abbc-e4f93841182d" />
+<img width="818" height="152" alt="image" src="https://github.com/user-attachments/assets/cdc642d6-fe4c-4583-8d0c-1f4248c34a2e" />
 
+   
 2. **Merkle Trees (`MerkleVerifier.sol`):**
    - Implementação de verificação de provas Merkle para Whitelists e Airdrops.
    - Foco em **gas optimization**, permitindo validar listas massivas de usuários com custo computacional mínimo na rede.
