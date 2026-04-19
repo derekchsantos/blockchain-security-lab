@@ -39,7 +39,7 @@ Além da segurança, o laboratório foca em infraestrutura e otimização:
    - Foco em **gas optimization**, permitindo validar listas massivas de usuários com custo computacional mínimo na rede.
    
 
-   <img width="826" height="154" alt="image" src="https://github.com/user-attachments/assets/f9b16469-ce39-4142-9349-14a07c47caf0" />
+<img width="817" height="146" alt="image" src="https://github.com/user-attachments/assets/ceb6f18d-a7c6-413d-acd0-0cb20aa7e272" />
 
 
 ## 🛡️ Pipeline de Segurança (CI/CD)
