@@ -1,20 +1,20 @@
-# Blockchain Security & Engineering Lab 🛡️⚙️
+# Blockchain Security & Engineering Lab
 
 Este repositório contém estudos avançados de segurança e engenharia em Smart Contracts (Solidity), utilizando ferramentas de elite do ecossistema Web3 para garantir contratos escaláveis e resilientes.
 
-## 🚀 Tecnologias e Ferramentas
+## Tecnologias e Ferramentas
 - **Foundry:** Framework de testes de alta performance (Property-based Testing, Fuzzing & Invariants).
 - **Slither:** Analisador estático para detecção de vulnerabilidades críticas.
 - **GitHub Actions:** Pipeline de CI/CD para auditoria automática de segurança a cada commit.
 - **WSL2/Ubuntu:** Ambiente de desenvolvimento Linux otimizado.
 
-## 🛠️ Segurança & Auditoria
+## Segurança & Auditoria
 1. **VulnerableVault.sol:** Desenvolvimento de um cofre com vulnerabilidade de **Reentrancy**.
 2. **Correção de Segurança:** Implementação do padrão *Checks-Effects-Interactions* para mitigação de ataques.
 3. **Fuzz Testing:** Testes unitários com valores aleatórios (256 runs) para validar funções isoladas.
 4. **Stateful Invariant Testing:** Testes de estado para garantir a integridade contábil do contrato.
 
-### 🧪 Demonstração de Testes de Estresse (Foundry Invariants)
+### Demonstração de Testes de Estresse (Foundry Invariants)
 O motor de testes do Foundry foi configurado para tentar "quebrar" o contrato através de milhares de combinações aleatórias.
 
 <img width="796" height="303" alt="image" src="https://github.com/user-attachments/assets/44c77f2a-a809-49bc-923b-b2b98e87b761" />
@@ -24,7 +24,7 @@ O motor de testes do Foundry foi configurado para tentar "quebrar" o contrato at
 - **Cenários (Runs):** 256 sequências distintas.
 - **Resultado:** 100% de sucesso.
 
-## 🧠 Engenharia de Blockchain & Criptografia
+## Engenharia de Blockchain & Criptografia
 Além da segurança, o laboratório foca em infraestrutura e otimização:
 
 1. **ECDSA Verification (`CryptoVerify.sol`):** 
@@ -42,14 +42,13 @@ Além da segurança, o laboratório foca em infraestrutura e otimização:
 <img width="817" height="146" alt="image" src="https://github.com/user-attachments/assets/ceb6f18d-a7c6-413d-acd0-0cb20aa7e272" />
 
 
-## 🛡️ Pipeline de Segurança (CI/CD)
+## Pipeline de Segurança (CI/CD)
 O projeto utiliza **GitHub Actions** para rodar o **Slither** automaticamente a cada push, impedindo que códigos com vulnerabilidades conhecidas sejam integrados ao branch principal.
 
-## 📋 Como rodar os testes
+## Como rodar os testes
 ```bash
 # Rodar todos os testes (Unitários, Fuzzing e Invariantes)
 forge test
 
 # Rodar análise de segurança estática
 slither . --compile-force-framework foundry
-
