@@ -1,6 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
+//@author Derek Christopher
+
 contract CryptoVerify {
     /* 
     A assinatura digital no Ethereum é composta por 3 valores: r, s e v.
