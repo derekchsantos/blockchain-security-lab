@@ -5,6 +5,8 @@ import "forge-std/Test.sol";
 import "../src/VulnerableVault.sol";
 import "./Handler.sol";
 
+//@author Derek Christopher
+
 // REMOVIDO o "InvariantTest", herde apenas de "Test"
 contract VaultInvariants is Test {
     VulnerableVault public vault;
