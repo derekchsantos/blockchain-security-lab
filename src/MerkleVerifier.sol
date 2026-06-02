@@ -1,6 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
+//@author Derek Christopher
+
 contract MerkleVerifier {
     // O Merkle Root é a única coisa que guardamos no contrato
     bytes32 public root;
