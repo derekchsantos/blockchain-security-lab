@@ -4,8 +4,6 @@ pragma solidity ^0.8.13;
 import {Script} from "forge-std/Script.sol";
 import {Counter} from "../src/Counter.sol";
 
-//@author Derek Christopher
-
 contract CounterScript is Script {
     Counter public counter;
 
