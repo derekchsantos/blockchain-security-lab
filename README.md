@@ -1,4 +1,4 @@
-# Blockchain Security E Engineering Lab
+# Blockchain Security e Engineering Lab
 
 Este repositório contém estudos avançados de segurança e engenharia em Smart Contracts (Solidity), utilizando ferramentas de elite do ecossistema Web3 para garantir contratos escaláveis e resilientes.
 
