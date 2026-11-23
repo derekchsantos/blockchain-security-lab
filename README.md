@@ -1,4 +1,4 @@
-# Blockchain Security & Engineering Lab
+# Blockchain Security E Engineering Lab
 
 Este repositório contém estudos avançados de segurança e engenharia em Smart Contracts (Solidity), utilizando ferramentas de elite do ecossistema Web3 para garantir contratos escaláveis e resilientes.
 
@@ -45,10 +45,3 @@ Além da segurança, o laboratório foca em infraestrutura e otimização:
 ## Pipeline de Segurança (CI/CD)
 O projeto utiliza **GitHub Actions** para rodar o **Slither** automaticamente a cada push, impedindo que códigos com vulnerabilidades conhecidas sejam integrados ao branch principal.
 
-## Como rodar os testes
-```bash
-# Rodar todos os testes (Unitários, Fuzzing e Invariantes)
-forge test
-
-# Rodar análise de segurança estática
-slither . --compile-force-framework foundry
