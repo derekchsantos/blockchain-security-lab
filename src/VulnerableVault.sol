@@ -12,8 +12,7 @@ contract VulnerableVault {
         uint256 amount = balances[msg.sender];
         require(amount > 0, "Saldo insuficiente");
         
-        // CORRECAO: Atualizar o saldo ANTES de enviar o dinheiro
-        balances[msg.sender] = 0;
+     balances[msg.sender] = 0;
         
         (bool success, ) = msg.sender.call{value: amount}("");
         require(success, "Transferencia falhou");
