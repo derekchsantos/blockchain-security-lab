@@ -2,10 +2,7 @@
 pragma solidity ^0.8.20;
 
 contract CryptoVerify {
-    /* 
-    A assinatura digital no Ethereum é composta por 3 valores: r, s e v.
-    Este contrato verifica se uma mensagem foi realmente assinada por um endereço específico.
-    */
+
     function verify(
         address _signer,
         string memory _message,
@@ -22,7 +19,7 @@ contract CryptoVerify {
     }
 
     function getEthSignedMessageHash(bytes32 _messageHash) public pure returns (bytes32) {
-        // O prefixo é necessário para evitar que assinaturas sejam usadas em contextos errados
+        
         return keccak256(abi.encodePacked("\x19Ethereum Signed Message:\n32", _messageHash));
     }
 
